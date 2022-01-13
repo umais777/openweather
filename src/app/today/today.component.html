@@ -1,0 +1,85 @@
+
+
+            
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h5 style="padding-left: 20%;">Current Weather and forecast in Your City</h5>
+                    <h2 style="padding-left: 20%;">Weather in {{weather.name}}, {{weather.sys.country}}</h2>
+                    <div class="temp" >
+                    <img style="padding-left: 30%;" src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png" alt="">
+                     <h1 style="padding-left: 15%;">{{weather.main.temp -273.15 |  number: '1.0-0'}}&#176;</h1> 
+                     <p style="padding-left: 20%;" class="text-uppercase font-italic font-weight-bold">{{weather.weather[0].description}}</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-4">
+                    
+                    <div class="searchBox">
+                      <input class="searchInput"type="text" #input placeholder="Search...">
+                      <button class="searchButton" (click)="getcity(input.value)">
+                          <i class="material-icons">
+                            search
+                          </i>
+                      </button><br><br>
+                  </div>
+                     
+                    <div class="details">
+                      <br><br><br>
+                    <span> 
+                      <img src="https://img.icons8.com/nolan/64/partly-cloudy-day.png" alt="humidity"/>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&nbsp;Humidity:{{weather.sys.sunrise * 1000 | date:'H:mm'}}%</span><br><br>
+                    
+                   <span>
+                    <img src="https://img.icons8.com/nolan/64/smiling-sun.png" alt="sun"/>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&nbsp;Sunset:{{weather.sys.sunset * 1000 | date:'H:mm'}}%</span><br><br>
+                
+                   <span><img src="https://img.icons8.com/nolan/64/clouds.png" alt="clouds"/>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&nbsp;clouds:{{weather.clouds.all}}%</span><br><br>
+                
+                   <span>
+                    <img src="https://img.icons8.com/nolan/64/tsunami.png" alt="sea"/>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&nbsp;Sea level: {{weather.wind.speed}}hpa</span>
+                  </div>
+                  </div>
+                </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+
+
+
+.temp{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.searchBox {
+    position: right;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 160px;
+    padding: 0 6px;
+    background-color: #f7b42c;
+background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #d19342;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:right;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+
+.col-sm-8{
+    
+    background-image: url('david-moum-nbqlWhOVu6k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 130%;
+    color:cornsilk
+}
+h1{
+    font-size: 10rem;
+    font-style:oblique;
+}
+.col-sm-8 p{
+    font-size: 1.5rem;
+    font-style: oblique;
+    
+}
+
+.col-sm-4{
+    background-color: black;
+    
+}
+.details{
+    color:whitesmoke;
+    font-size: 1.2rem;
+    font-style:italic ;
+}
+
+@media(max-width: 992px)
+{
+    h1{
+        font-size: 5rem;
+    font-style:oblique;
+    }
+    .col-sm-8 p{
+        font-size: 1rem;
+        font-style: oblique;
+    }
+    .details{
+        color:whitesmoke;
+        font-size: 15px;
+    }
+    button
+    {
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 50px;
+    height: 30px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    color: #fff; 
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
